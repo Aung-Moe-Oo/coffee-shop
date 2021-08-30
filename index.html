@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></a>
+    <title>My coffee shop</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicon/site.webmanifest">
+    <link rel="mask-icon" href="resources/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="resources/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="msapplication-config" content="resources/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="resources/css/backup-style.css">
+    <link rel="stylesheet" href="resources/css/query.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="vendor/bootstrap.css">         -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="vendor/js.js"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body onload = "loadfun()">
+    <!-- preloader -->
+    <div id="loading"></div>
+    <!-- nav section -->
+    <header class="container-fluid" id="main">
+        <div class="container">
+            <nav>
+                <a href="#main">
+                    <img src="resources/img/Logo.png" alt="" class="logo">
+                    <img src="resources/img/logo-black.png" alt="" class="logo-black">
+                </a>
+                <div class="nav-main js-nav-main">
+                    <ul>
+                        <li>
+                            <a href="#order">Order Now</a>
+                        </li>
+                        <li>
+                            <a href="#work">How It Works</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="mobile-icon js-mobile-icon"><i class="fas fa-bars"></i></a>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="hero">
+                    <h1 class="hero-title">Welcome to Mingalar Cafe</h1>
+                    <a href="#" class="bt bt-main js-bt-main">I'm hungry</a>
+                    <a href="#" class="bt bt-sec js-bt-sec">See more</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- how it works -->
+    <section class="container-fluid g-0 work js-work" id="work">
+        <div class="row">
+            <h1 class="title text-center pb-5">
+                How it works
+            </h1>
+        </div>
+        <div class="row js-wp-1">
+            <div class="col-md-6 work-pic text-center">
+                <img src="resources/img/people.svg" alt="">
+            </div>
+            <div class="col-md-6 description">
+                <div>
+                    <div class="num col-md-1 text-center">1</div>
+                    <p class="col-md-8 offset-md-2">
+                        Come and choose your favourite great tasting coffees and tea today.
+                    </p>
+                </div>
+                <div>
+                    <div class="num col-md-1 text-center">2</div>
+                    <p class="col-md-8 offset-md-2">
+                        Order your coffee using our mobile app or website. Or you can even call us!
+                    </p>
+                </div>
+                <div>
+                    <div class="num col-md-1 text-center">3</div>
+                    <p class="col-md-8 offset-md-2">
+                        Enjoy your coffee after less than 20 minutes.See you the next time!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- location -->
+    <section class="container location js-order" id="order">
+        <h1 class="title text-center">Call and order in these cities</h1>
+        <div class="row js-wp-2">
+            <div class="col-md-4">
+                <div class="city">
+                    <img src="resources/img/yangon.jpg" alt="yangon">
+                    <h5>Yangon</h5>
+                    <ul class="ps-0 about">
+                        <li>
+                            <i class="fas fa-users"></i>100000+ Happy Customers
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>09123456789
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter"></i><a href="#">@mingalar_yangon</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="city">
+                    <img src="resources/img/mandalay.jpg" alt="mandalay">
+                    <h5>Mandalay</h5>
+                    <ul class="ps-0  about">
+                        <li>
+                            <i class="fas fa-users"></i>80000+ Happy Customers
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>09123456789
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter"></i></i><a href="#">@mingalar_mandalay</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="city">
+                    <img src="resources/img/taunggyi.jpg" alt="taunggyi">
+                    <h5>Taunggyi</h5>
+                    <ul class="ps-0 about">
+                        <li>
+                            <i class="fas fa-users"></i>70000+ Happy Customers
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>09123456789
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter"></i></i><a href="#">@mingalar_taunggyi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- item section -->
+    <section class="container-fluid menu-items g-0">
+        <div class="row">
+            <ul class="show-case">
+                <li>
+                    <figure class="item-photo">
+                        <img src="resources/img/cappuccino.jpg" alt="cappuccino.jpg">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="item-photo">
+                        <img src="resources/img/chocolate.jpg" alt="chocolate.jpg">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="item-photo">
+                        <img src="resources/img/coffee.jpg" alt="coffee.jpg">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="item-photo">
+                        <img src="resources/img/green-tea.jpg" alt="green-tea.jpg">
+                    </figure>
+                </li>
+            </ul>
+            <ul class="show-case">
+                <li>
+                    <figure class="item-photo">
+                        <img src="resources/img/milk.jpg" alt="milk.jpg">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="item-photo">
+                        <img src="resources/img/ice-coffee.jpg" alt="ice-coffee.jpg">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="item-photo">
+                        <img src="resources/img/milkshake.jpg" alt="milkshake.jpg">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="item-photo">
+                        <img src="resources/img/milkcoffee.jpg" alt="milk-coffee.jpg">
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- customers section -->
+    <section class="container-fluid customers">
+        <div class="row">
+            <h1 class="title text-center">
+                Our customers can't live without us
+            </h1>
+        </div>
+        <div class="row mx-2 pb-5 js-wp-3">
+            <div class="col-md-4 pb-sm-3">
+                <blockquote>
+                    Mingalar is just awesome! I just launched a startup which leaves me with no time for making coffee,
+                    so Mingalar is a life-saver. Now that I got used to it, I couldn't live without my daily coffee!
+                </blockquote>
+                <cite>
+                    <img src="resources/img/customer-1.jpg" alt="customer-1.jpg">Alberto Duncan
+                </cite>
+            </div>
+            <div class="col-md-4 pb-sm-3">
+                <blockquote>
+                    Inexpensive, healthy and great-tasting coffee, delivered right to my home. We have lots of delivery
+                    here in Myanmar, but no one comes even close to Mingalar. Me and my family are so in love!
+                </blockquote>
+                <cite>
+                    <img src="resources/img/customer-2.jpg" alt="customer-2.jpg">Joana Silva
+                </cite>
+            </div>
+            <div class="col-md-4 pb-sm-3">
+                <blockquote>
+                    I was looking for a quick and easy delivery service in Myanmar. I tried a lot of them and ended up
+                    with Mingalar. Best food delivery service in the Bay Area. Keep up the great work!
+                </blockquote>
+                <cite>
+                    <img src="resources/img/customer-3.jpg" alt="customer-3.jpg">Milton Chapman
+                </cite>
+            </div>
+        </div>
+    </section>
+    <!-- contact section -->
+    <section class="container contact pb-4" id="contact">
+        <div class="row">
+            <h1 class="title text-center">
+                We're happy to hear from you
+            </h1>
+        </div>
+        <div class="row pe-sm-5">
+            <form action="#" method="POST" class="col-md-8 offset-2 contact-form">
+                <div class="row py-1">
+                    <div class="col-md-4">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                </div>
+                <div class="row py-1">
+                    <div class="col-md-4">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="email" name="email" id="email" placeholder="Your Email Address" required>
+                    </div>
+                </div>
+                <div class="row py-1">
+                    <div class="col-md-4">
+                        <label for="">How did you find us?</label>
+                    </div>
+                    <div class="col-md-8">
+                        <select name="find-us" id="find-us">
+                            <option value="friend">friends</option>
+                            <option value="search">search engine</option>
+                            <option value="ad">advertisements</option>
+                            <option value="other">other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row py-1">
+                    <div class="col-md-4">
+                        <label for="">Newsletter</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="checkbox" name="news" id="news">Yes, Please.
+                    </div>
+                </div>
+                <div class="row py-1">
+                    <div class="col-md-4">
+                        <label for="">Drop Us a Line</label>
+                    </div>
+                    <div class="col-md-8">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Messages"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="">&nbsp;</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="submit" value="Send It!">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Press</a>
+                        </li>
+                        <li>
+                            <a href="#">iOS App</a>
+                        </li>
+                        <li>
+                            <a href="#">Android App</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="social-links text-end">
+                        <li>
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-google-plus-g"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2021 by Aung Moe Oo.
+                </p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/selectize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+</body>
+
+</html>

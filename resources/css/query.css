@@ -1,0 +1,153 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/* for small phone from 0 to 1200 */
+@media screen and (max-width: 1200px) {
+}
+/* for small phone from 0 to 1023 */
+@media screen and (max-width: 1023px) {
+  html {
+    font-size: 18px;
+  }
+  .hero-title {
+    font-size: 180%;
+  }
+  .title {
+    font-size: 150%;
+  }
+  .city {
+    font-size: 80%;
+  }
+  .num {
+    padding: 0;
+    border: 1px solid #e67e22;
+  }
+  blockquote {
+    word-spacing: 0;
+    line-height: 130%;
+  }
+  .customers img {
+    border-radius: 50%;
+    height: 30px;
+    margin-right: 10px;
+  }
+}
+/* for small phone from 0 to 768 */
+@media screen and (max-width: 767px) {
+  html{
+    font-size: 80%;
+  }
+  .mobile-icon {
+    display: inline-block;
+    margin-right: 20%;
+  }
+  .nav-main {
+    margin-top: 6px;
+    float: left;
+  }
+  .nav-sticky .nav-main {
+    margin: 10px 20px 0;
+  }
+  .nav-sticky .nav-main li a:link,
+  .nav-sticky .nav-main li a:visited {
+    padding: 3px 0;
+  }
+  .nav-sticky .mobile-icon i {
+    color: #555;
+    margin: -20px 10px;
+  }
+  .nav-main li {
+    display: block;
+  }
+  .nav-main li a:link,
+  .nav-main li a:visited {
+    display: block;
+    margin: 0;
+    padding: 3px 0;
+  }
+  .nav-sticky {
+    margin: 0 auto;
+  }
+  .nav-main {
+    display: none;
+  }
+  .hero-title {
+    font-size: 130%;
+  }
+  .title {
+    font-size: 100%;
+  }
+  .title:after {
+    width: 100px;
+    margin: 10px auto 0;
+    background-color: #e67e22;
+  }
+  .city {
+    padding: 0;
+    margin:1% 20%;
+  }
+  .city img {
+    width: 100%;
+  }
+  .description {
+    display: block;
+    margin: 0 50px;
+    padding-top: 0;
+  }
+  .description p {
+    padding: 0 30px;
+    margin-right: 50px;
+  }
+  .num {
+    margin-right: 10px;
+    border: 1px solid transparent;
+  }
+  .bt,
+  input[type="submit"] {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-right: 10px;
+  }
+  .work-pic img {
+    display: none;
+  }
+  .customers img {
+    margin-bottom: 30px;
+  }
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 70%;
+    border-radius: 4px;
+    border: 1px solid #898585;
+    padding: 7px;
+    -webkit-box-shadow: 2px 2px #898585;
+    box-shadow: 2px 2px #898585;
+  }
+  .social-links{
+    float: left;
+  }
+}
+/* for small phone from 0 to 480 */
+@media screen and (max-width: 480px) {  
+  html {
+    font-size: 70%;
+  }
+  .description {
+    display: block;
+    margin: 0 20px;
+  }
+  .description p {
+    padding: 0 30px;
+    margin-right: 20px;
+  }
+  .num {
+    margin-right: 10px;
+    border: 1px solid transparent;
+  }
+}
