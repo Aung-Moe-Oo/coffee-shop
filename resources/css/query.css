@@ -16,6 +16,9 @@
   .hero-title {
     font-size: 180%;
   }
+  .nav-main {
+    display: block;
+  }
   .title {
     font-size: 150%;
   }
@@ -38,19 +41,33 @@
 }
 /* for small phone from 0 to 768 */
 @media screen and (max-width: 767px) {
-  html{
+  html {
     font-size: 80%;
+  }
+  #main {
+    position: relative;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px 30px;
+  }
+  .logo {
+    width: 75px;
+    height: 75px;
   }
   .mobile-icon {
     display: inline-block;
-    margin-right: 20%;
   }
   .nav-main {
     margin-top: 6px;
     float: left;
+    overflow: hidden;
   }
-  .nav-sticky .nav-main {
-    margin: 10px 20px 0;
+  .nav-sticky {
+    margin: 0;
+    padding-right: 30px;
   }
   .nav-sticky .nav-main li a:link,
   .nav-sticky .nav-main li a:visited {
@@ -60,17 +77,39 @@
     color: #555;
     margin: -20px 10px;
   }
-  .nav-main li {
-    display: block;
+
+  .nav-main ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    background-color: #000;
   }
   .nav-main li a:link,
   .nav-main li a:visited {
+    font-size: 30px;
     display: block;
     margin: 0;
-    padding: 3px 0;
+    padding: 20px 0;
   }
   .nav-sticky {
     margin: 0 auto;
+  }
+  .nav-sticky li a:link,
+  .nav-sticky li a:visited {
+    font-size: 30px;
+    color: white !important;
+    display: block;
+    margin: 0;
+    padding: 20px 0 !important;
   }
   .nav-main {
     display: none;
@@ -88,7 +127,7 @@
   }
   .city {
     padding: 0;
-    margin:1% 20%;
+    margin: 1% 20%;
   }
   .city img {
     width: 100%;
@@ -129,12 +168,12 @@
     -webkit-box-shadow: 2px 2px #898585;
     box-shadow: 2px 2px #898585;
   }
-  .social-links{
+  .social-links {
     float: left;
   }
 }
 /* for small phone from 0 to 480 */
-@media screen and (max-width: 480px) {  
+@media screen and (max-width: 480px) {
   html {
     font-size: 70%;
   }

@@ -24,6 +24,7 @@ section {
   clear: both;
   margin: 0px;
   padding-top: 5%;
+  overflow: hidden;
 }
 /* preloader */
 #loading {
@@ -81,7 +82,6 @@ header {
 }
 /* mobile nav */
 .mobile-icon {
-  float: right;
   cursor: pointer;
   margin-top: 30px;
   display: none;
@@ -100,6 +100,9 @@ header {
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 2px 2px #555;
   z-index: 999;
+
+  display: flex;
+  justify-content: space-between;
 }
 .nav-sticky .nav-main a:link,
 .nav-sticky .nav-main a:visited {
@@ -115,6 +118,7 @@ header {
 
 .logo {
   float: left;
+  width: 100px;
   height: 100px;
   width: auto;
 }
